@@ -1,0 +1,31 @@
+
+<ActionBar title="Società" icon="">
+  <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="glb.goBack()"></NavigationButton>
+  <ActionItem tap="onShare"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+
+  <ActionItem  ios.position="right" android.systemIcon="ic_menu_action" android.position="popup">
+    
+  </ActionItem>
+</ActionBar>
+  
+   <StackLayout (loaded)="onLoad()">
+
+     <Label [text]="societa.length + ' società'"></Label>
+
+   <ListView [items]="societa" id="lv1" itemTap="listViewItemTap">
+	 <template let-item="item" >
+     <StackLayout cssClass="margin">
+	<!-- <Image  row="1" col="1" src="{{ 'res://add_to_fav_1'}}" />-->
+       <Label  [text]="item.doc.nome" textWrap="true" cssClass="gara" ></Label>
+	   
+	   </StackLayout>
+
+
+       <!--<Label [text]="item.doc.title" textWrap="true" class="lvitem" ></Label>-->
+
+    </template>
+	</ListView>
+	</StackLayout>

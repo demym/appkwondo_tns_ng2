@@ -1,0 +1,87 @@
+
+<ActionBar title="ChatKwonDo" icon="">
+  <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="globalsService.goBack()"></NavigationButton>
+  <ActionItem tap="onShare"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+
+  <ActionItem  ios.position="right" android.systemIcon="ic_menu_action" android.position="popup">
+    
+  </ActionItem>
+</ActionBar>
+  
+ <GridLayout columns="*" rows="*, 50" className="nsChatView-view" (loaded)="onLoad()">  
+ 
+
+
+ <ListView [items]="chat" id="lv1"  scolSpan="2" srow="1" className="nsChatView-messageList" row="0"  horizontalAlignment="stretch" verticalAlignment="stretch">  
+ <template let-item="item">  
+ 
+ <!--
+ <GridLayout columns="*,*,*" class="messages">
+
+ <Label text="{{ nickname }}" />  
+ <Label text="{{ text }}" col="1" />  
+ <Label text="{{ time}}" col="2" /> 
+ </GridLayout>
+-->
+
+ <GridLayout [className]="'nsChatView-item-' + (item.isRight ? 'right' : 'left')"
+                  rows="auto" columns="auto,*,auto">
+
+        <!-- avatar -->
+       <!-- <Image row="0" col="{{ isRight ? '2' : '0' }}"
+               className="nsChatView-avatar"
+               verticalAlignment="top"
+               src="{{ img }}"
+               visibility="{{ img ? 'visible' : 'collapsed' }}" />-->
+
+        <!-- the message -->
+        <StackLayout row="0" [col]="item.isRight ? '2' : '0'"
+                     className="nsChatView-message">
+
+          <!-- the message area -->
+          <Border className="nsChatView-messageArea">
+            <StackLayout className="nsChatView-content"
+                         verticalAlignment="top" horizontalAlignment="right">
+
+              <!-- the date / time -->   
+              <StackLayout orientation="horizontal">	
+<Label className="nsChatView-date"
+                     [horizontalAlignment]="item.isRight ? 'right' : 'left'"
+                     [text]="item.nickname"
+                     svisibility="{{ time ? 'visible' : 'collapsed' }}" ></Label>			  
+              
+					 <Label className="nsChatView-date"
+                     [horizontalAlignment]="item.isRight ? 'right' : 'left'"
+                     text=" "
+                     svisibility="{{ time ? 'visible' : 'collapsed' }}" ></Label>
+					 <Label className="nsChatView-date"
+                     [horizontalAlignment]="item.isRight ? 'right' : 'left'"
+                     [text]="item.time"
+                     svisibility="{{ time ? 'visible' : 'collapsed' }}" ></Label>
+				
+              </StackLayout>
+              <!-- the message text -->
+              <Label className="nsChatView-messageText"
+                     [horizontalAlignment]="item.isRight ? 'right' : 'left'"
+                     [text]="item.text" textWrap="true" ></Label>
+            </StackLayout>
+          </Border>
+        </StackLayout>
+
+        <!-- The invisible separator -->
+        <Border row="0" [col]="item.isRight ? '0' : '2'"
+                className="nsChatView-separator" ></Border>
+      </GridLayout>
+
+</template>  
+</ListView>  
+<!--<ChatView id="chatview1" />-->
+
+ <GridLayout className="nsChatView-sendMessageArea" row="1"  rows="*" columns="*,100">
+ <TextField id="tf1" hint="Enter text" text="prova" row="0" col="0" ></TextField>  
+ <Button col="1" text="&#xf1d9;" (tap)="postChat()" row="0"  class="font-awesome"></Button>
+ </GridLayout>
+</GridLayout>  

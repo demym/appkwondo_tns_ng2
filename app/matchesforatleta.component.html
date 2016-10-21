@@ -1,0 +1,28 @@
+<ActionBar [title]="'Incontri di '+atletaname" cssClass="actionbar">
+<NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap" (tap)="glb.goBack()"></NavigationButton>
+
+
+    <ActionItem text="right" ios.position="right"></ActionItem>
+     <ActionItem ios.position="right" android.position="popup" text="Refresh" (tap)="refreshGara()"></ActionItem>
+     <ActionItem ios.position="right" android.position="popup" text="Iscritti" tap="showIscritti"></ActionItem>
+    <ActionItem ios.position="right" android.position="popup" text="About"></ActionItem>
+
+</ActionBar>
+<StackLayout>
+  <ListView  [items]="matchesforatleta" id="lvprog" (itemTap)="matchTap($event)" visibility="visible">
+ <template let-item="item" >
+ <StackLayout orientation="horizontal" style="height: 70;" >
+   <StackLayout  cssClass="session-container" width="50">
+
+   <Image id="imgmatch" width="36" height="36" [src]="glb.getMatchImage(item.doc)"></Image>
+   </StackLayout>
+   <StackLayout cssClass="session-container" orientation="vertical">
+     <Label [text]="item.doc.matchid" textWrap="true" cssClass="match"></Label>
+   <Label [text]="item.doc.atletaname" textWrap="true" cssClass="atleta"></Label>
+   <Label [text]="item.doc.risultato" textWrap="true" cssClass="risult"></Label>
+   <!--<Label [text]="item.doc.categoria.toUpperCase()" textWrap="true" cssClass="risult"></Label>-->
+  </StackLayout>
+ </StackLayout>
+  </template>
+</ListView>
+</StackLayout>

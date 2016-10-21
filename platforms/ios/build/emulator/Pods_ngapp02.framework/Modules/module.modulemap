@@ -1,0 +1,6 @@
+framework module Pods_ngapp02 {
+  umbrella header "Pods-ngapp02-umbrella.h"
+
+  export *
+  module * { export * }
+}

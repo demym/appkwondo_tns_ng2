@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/widgets-release/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="89f0a1f737477abeda61c0072529d5158b1ebe81">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/intermediates-exploded-aar-widgets-release_8e721b05452a7d18caea5ad521f7e37802336e1d.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/okio-1.6.0_343477a755b873479797f4c2d115cc63db83b121.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/internal_impl-23.4.0_573e504a9c641d71b62535e215c75c8dda4e85cf.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/com.android.support-support-v4-23.4.0_a67ddd918ad85c8f7b48f9140efe251bd7111407.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/support-annotations-23.4.0_ba1ef7d215964af3354901ffd6976a3834f358a3.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/com.android.support-animated-vector-drawable-23.4.0_337371f0b1bbd98517b1eafb69730b0a22279af7.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/com.android.support-cardview-v7-23.4.0_1f889917af429cf946cd11893b089cd09da5a56f.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/ngapp01/runtime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="9909ad5fcc13fcc60529cfa340ee7e0abc79af38">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/ngapp01-runtime-unspecified_cc6c81b7adf8195a93e55a193c44aae049d9cfc9.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/okhttp-3.0.1_54f4adb229e0889d5a8036f46d5db852fcdbee5e.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/com.android.support-appcompat-v7-23.4.0_5e81d9cdfea10be67791c2ac4089a7e8f0550342.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/0.7.0/c1b1d30e2d2231b2eae1438a44943a409b976dac/engine.io-client-0.7.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c1b1d30e2d2231b2eae1438a44943a409b976dac">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/engine.io-client-0.7.0_716ef5eb956bfb4afc605fbe56022365ac65f91e.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/com.android.support-support-vector-drawable-23.4.0_05fe57f8ed2bed477b6427d8b8584bc81477d112.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/exploded-aar/ngapp01/runtime/unspecified/jars/libs/binding-generator.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4290aba11bda501dbadc2dd5c4b08282c0bbfeb8">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/binding-generator_102c1de5f6a79d998d638e9ea58cf6aaf5cce741.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/0.7.0/ce278c97bc9f74c7945d647f6d441d6013163362/socket.io-client-0.7.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ce278c97bc9f74c7945d647f6d441d6013163362">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/socket.io-client-0.7.0_e0aa0bf1bfb66fac1a6e70950c959eb8f89a53f4.jar" />
+    </item>
+    <item
+        jar="/Users/pietroturati/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.0.1/bd9b51a0188fc8f14bf840a0d326755545206116/okhttp-ws-3.0.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bd9b51a0188fc8f14bf840a0d326755545206116">
+        <dex dex="/Users/pietroturati/Box Sync/demy/ngapp02/platforms/android/build/intermediates/pre-dexed/F0F1F2/debug/okhttp-ws-3.0.1_2711355dc908469b9c01f782638ed20676a5b38c.jar" />
+    </item>
+
+</items>

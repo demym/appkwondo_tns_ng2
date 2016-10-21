@@ -1,0 +1,13 @@
+<StackLayout>
+<Label [text]="stocaz" class="title"></Label>
+    <Label text="Tap the button" class="title"></Label>
+    
+    <Button text="TAP" (tap)="onTap()"></Button>
+
+    <Label [text]="message" class="message" textWrap="true"></Label>
+	<ListView [items]="lvitems" >
+	<ListView.itemTemplate  >
+	  <Label (text)="$value" class="message" ></Label>
+	</ListView.itemTemplate>
+	</ListView>
+</StackLayout>

@@ -1,0 +1,24 @@
+<StackLayout>
+    <ListView  [items]="matchesbyatleta" id="lvprog" (itemTap)="matchTap()" visibility="visible">
+	 <template let-item="item">
+	 <StackLayout orientation="horizontal">
+	   <StackLayout  cssClass="session-container" width="50">
+	 
+		 <Image id="imgmatch" width="36" height="36" [src]="item.imgurl"></Image>
+	   </StackLayout>
+	   <StackLayout cssClass="session-container" orientation="vertical">
+       <Label [text]="item.nome" textWrap="true" cssClass="match"></Label>
+	   <Label [text]="item.categoria.toUpperCase()" textWrap="true" cssClass="risult"></Label>
+	   <!--<Label [text]="item.matches" textWrap="true" cssClass="atleta"></Label>-->
+	   <StackLayout orientation="horizontal" id="stack" style="text-align: left" >
+	   
+			   <Label *ngFor="let m of item.matchesarray" [text]="m.matchid" margin="3" [cssClass]="m.mclass" ></Label>
+	
+	    </StackLayout>
+
+
+	  </StackLayout> 
+	 </StackLayout> 
+    </template>
+	</ListView>
+</StackLayout>   

@@ -1,0 +1,46 @@
+
+    <ActionBar title="Gara" cssClass="actionbar">
+	 <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap" (tap)="glb.goBack()"></NavigationButton>
+	    
+   
+        <ActionItem text="right" ios.position="right"></ActionItem>
+         <ActionItem ios.position="right" android.position="popup" text="Refresh" (tap)="refreshGara()"></ActionItem>
+         <ActionItem ios.position="right" android.position="popup" text="Iscritti" tap="showIscritti"></ActionItem>
+        <ActionItem ios.position="right" android.position="popup" text="About"></ActionItem>
+
+    </ActionBar>
+    <StackLayout>
+  <Label *ngIf="true" [text]="loadingText"></Label>
+
+<TabView >
+  <StackLayout *tabItem="{title: 'Per match'}">
+    <matchesbyprog [mbp]="mbp"> </matchesbyprog>
+  </StackLayout>
+
+  <StackLayout *tabItem="{title: 'Per atleta'}">
+    <matchesbyatleta [mba]="mba"></matchesbyatleta>
+  </StackLayout>
+
+  <StackLayout *tabItem="{title: 'Cronaca'}">
+   <!-- <StackLayout>
+    <ListView  [items]="cron" id="lvcronaca" itemTap="matchTap" visibility="visible">
+    <template let-item="item">
+      <StackLayout cssClass="session-container">
+      <Label [text]="item.time" textWrap="true" cssClass="time"></Label>
+      <Label [text]="item.text" textWrap="true" cssClass="cronaca"></Label>
+      </StackLayout>
+      </template>
+    </ListView>
+    </StackLayout>-->
+  <cronaca [cronaca]="cron"></cronaca>
+  </StackLayout>
+
+ <StackLayout *tabItem="{title: 'Iscritti'}">
+   
+  <iscritti [iscritti]="iscritti"></iscritti>
+  </StackLayout>
+
+  
+</TabView>
+    </StackLayout>
+ 

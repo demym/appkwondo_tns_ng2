@@ -1,0 +1,8 @@
+use_frameworks!
+
+target "ngapp02" do
+# Begin Podfile - /Users/pietroturati/Desktop/PROJECTS/demy/ngapp02/node_modules/nativescript-socket.io/platforms/ios/Podfile 
+ pod 'Socket.IO-Client-Swift', '~> 6.1.0' 
+ # End Podfile 
+
+end

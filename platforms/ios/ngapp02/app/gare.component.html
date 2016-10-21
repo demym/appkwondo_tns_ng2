@@ -1,0 +1,33 @@
+
+<ActionBar title="Gare" icon="">
+  <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="glb.goBack()"></NavigationButton>
+  <ActionItem tap="onShare"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+
+  <ActionItem  ios.position="right" android.systemIcon="ic_menu_action" android.position="popup">
+    
+  </ActionItem>
+</ActionBar>
+  
+   <StackLayout (loaded)="onLoad()">
+
+     <Label [text]="gare.length + ' gare'"></Label>
+
+   <ListView [items]="gare" id="lv1" (itemTap)="onItemTap($event)" (itemLongPress)="onItemLongPress($event)">
+	 <template let-item="item" >
+     <StackLayout cssClass="margin">
+	<!-- <Image  row="1" col="1" src="{{ 'res://add_to_fav_1'}}" />-->
+       <Label  width="100%" [text]="item.doc.title" textWrap="true" cssClass="gara" ></Label>
+	   <Label  [text]="item.doc.data + ' ' + item.doc.location" textWrap="true" cssClass="location" ></Label>
+	   <Label  [text]="item.doc.stato.toUpperCase()" textWrap="true" cssClass="stato"></Label>
+	    <Label  [text]="glb.getSplitLength(item.doc.iscritti)+' iscritti'" textWrap="true" cssClass="iscritti" ></Label>
+	   </StackLayout>
+
+
+       <!--<Label [text]="item.doc.title" textWrap="true" class="lvitem" ></Label>-->
+
+    </template>
+	</ListView>
+	</StackLayout>

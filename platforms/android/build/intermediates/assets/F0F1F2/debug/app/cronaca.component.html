@@ -1,0 +1,10 @@
+ <StackLayout>
+    <ListView  [items]="cronaca" id="lvcronaca" itemTap="matchTap" visibility="visible">
+    <template let-item="item">
+      <StackLayout cssClass="session-container">
+      <Label [text]="item.time" textWrap="true" cssClass="time"></Label>
+      <Label [text]="item.text" textWrap="true" cssClass="cronaca"></Label>
+      </StackLayout>
+      </template>
+    </ListView>
+    </StackLayout>

@@ -1,0 +1,37 @@
+
+<ActionBar title="AppKwonDo V2" icon="">
+  <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" ></NavigationButton>
+  <ActionItem tap="onShare"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+
+  <ActionItem  ios.position="right" android.systemIcon="ic_menu_action" android.position="popup">
+    
+  </ActionItem>
+</ActionBar>
+<StackLayout>
+  
+<!--<Label [text]="stocaz" class="title"></Label>
+    <Label text="Tap the button" class="title"></Label>
+    
+    <Button text="TAP" (tap)="onTap()"></Button>
+
+    <Label [text]="message" class="message" textWrap="true"></Label>
+	<Button text="GO TO SECOND" [nsRouterLink]="['/second']" class="link"></Button>
+	<Button text="GO TO ATLETI" [nsRouterLink]="['/atleti']" class="link"></Button>-->
+	
+  <!--<StackLayout *ngFor="let item of menu; let i=index" (tap)="onItemTap(i)" style="width: 100%; height: 40; font-size: 15; border: 1;" >
+<Label [text]="item.name"></Label>
+</StackLayout>-->
+
+<ListView [items]="menu" (itemTap)="onItemTap($event)"  >
+<template  let-item="item"  >
+  <StackLayout>
+<Label [text]="'&#xf0e6; ' + item.name" class="font-awesome lvhomepage " ></Label>
+  </StackLayout>
+</template>
+</ListView>    
+
+</StackLayout> 
+

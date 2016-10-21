@@ -1,0 +1,12 @@
+   <StackLayout (loaded)="onLoad()">
+  <Label id="lb1" textWrap="true" text="" ></Label>
+      <Button text="TAP" (tap)="onTap()"></Button>
+   <ListView [items]="atleti" id="lv1" itemTap="listViewItemTap">
+	 <template let-item="item">
+       <Label [text]="item.doc.cognome+' '+item.doc.nome" textWrap="true" class="lvitem" ></Label>
+	   
+    </template>
+	</ListView>
+	</StackLayout>
+
+

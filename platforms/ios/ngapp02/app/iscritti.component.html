@@ -1,0 +1,14 @@
+ <StackLayout>
+       <ListView [items]="iscr" id="lv1" itemTap="iscrittiTap">
+        <template let-item="item">
+        <GridLayout columns="*,40" rows="*,*" cssClass="session-container">
+
+          <Label  col="0" row="0" [text]="item.atletaname" textWrap="true" cssClass="gara"></Label>
+          <Label  col="1" row="0" [text]="item.matchcount" textWrap="true" cssClass="badge"></Label>
+          <Label  colSpan="2" row="1" [text]="item.categoria.toUpperCase()" textWrap="true" cssClass="location"></Label>
+
+        </GridLayout>
+        </template>
+	      </ListView>
+      <!--<Label text="iscritti"></Label>-->
+    </StackLayout>
